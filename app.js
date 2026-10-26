@@ -16,6 +16,8 @@
   var RUCNI_PLATNOST_MS = 300000;  /* ruční volba režimu platí 5 minut */
   var PREHRANI_MS = 60000;         /* záznam dne se přehraje za ~60 s */
   var DEN_MS = 86400000;           /* 24 h v milisekundách */
+  var MIN_PRACE_PREHRANI_MS = 2500; /* min. doba práce v čase přehrávání (60 min dne) */
+  var HRANA_PASU = 760;            /* od tohoto y dolů leží spodní lišty */
   var NOC_OD = 19;                 /* noc 19:00–6:59 pražského času */
   var NOC_DO = 7;
 
@@ -25,6 +27,7 @@
     CTX.imageSmoothingEnabled = false;
   }
 
+  var SCENA = document.getElementById('scena');
   var LISTA_STAV = document.getElementById('stav');
   var PREPINAC = document.getElementById('prepinac');
 
@@ -45,7 +48,8 @@
     tickerOd: 0,
     casNacitani: 0,
     casPoslednihoSnimku: 0,
-    snimek: 0
+    snimek: 0,
+    posunNastaven: false
   };
 
   /* Vedení firmy má vždy sprite „stoji“ (sprity „sedi“ obsahují vlastní stůl). */
@@ -199,9 +203,9 @@
       return;
     }
     var data = STAV.data;
-    var kousek = STAV.rezim === 'zaznam' ? 'záznam dne' : 'živě';
     var razitko = data ? hodinyMinuty(parsujCas(data.vypocteno)) : '—';
-    LISTA_STAV.textContent = kousek + ' · data z ' + razitko;
+    /* režim se píše jen ve scéně, lišta ukazuje jen stáří dat */
+    LISTA_STAV.textContent = 'data z ' + razitko;
   }
 
   /* ---------------------------------------------------------------- */
@@ -432,8 +436,9 @@
     if (!PREPINAC) {
       return;
     }
-    PREPINAC.textContent = STAV.rezim === 'zaznam' ? 'ZÁZNAM DNE' : 'ŽIVĚ';
-    PREPINAC.setAttribute('title', 'Přepnout na ' + (STAV.rezim === 'zaznam' ? 'ŽIVĚ' : 'ZÁZNAM DNE'));
+    /* tlačítko říká, co udělá */
+    PREPINAC.textContent = STAV.rezim === 'zaznam' ? 'Přepnout na živě' : 'Přepnout na záznam';
+    PREPINAC.setAttribute('title', 'Přepnout na ' + (STAV.rezim === 'zaznam' ? 'živě' : 'záznam'));
   }
 
   function pohlidatRucniVolbu() {
@@ -504,33 +509,19 @@
     return new Date(zapis.zobrazenyCas);
   }
 
-  /* Stavy postav podle událostí přehraných do zadaného času. */
-  function stavyZeZaznamu(casMs) {
+  /* Stavy postav podle událostí přehraných do zadaného času.
+     Počítá čistá funkce FL1Logika.stavyVCase; klíče výsledku se převedou přes klicJmena. */
+  function stavyVCaseZaznamu(casMs) {
     var mapa = {};
     var zapis = STAV.zapis;
-    if (!zapis) {
+    if (!zapis || typeof FL1Logika === 'undefined') {
       return mapa;
     }
-    for (var i = 0; i < zapis.udalosti.length; i += 1) {
-      var udalost = zapis.udalosti[i];
-      if (udalost.cas > casMs) {
-        break;
-      }
-      if (!udalost.postava) {
-        continue;
-      }
-      var klic = klicJmena(udalost.postava);
-      var stav = mapa[klic] || { stav: 'nic', druh: null };
-      if (udalost.druh) {
-        stav.druh = udalost.druh;
-      }
-      if (udalost.typ === 'start' || udalost.typ === 'rozdeleni') {
-        stav.stav = 'pracuje';
-      } else if (udalost.typ === 'hotovo' || udalost.typ === 'schvaleno' || udalost.typ === 'vraceno') {
-        stav.stav = 'nic';
-      }
-      mapa[klic] = stav;
-    }
+    var podleJmena = FL1Logika.stavyVCase(zapis.udalosti, casMs,
+      MIN_PRACE_PREHRANI_MS * DEN_MS / PREHRANI_MS);
+    Object.keys(podleJmena).forEach(function (jmeno) {
+      mapa[klicJmena(jmeno)] = podleJmena[jmeno];
+    });
     return mapa;
   }
 
@@ -825,13 +816,8 @@
     var vyska = 18;
     var pozice = postava.pozice;
     var x = Math.round(pozice.x - sirka / 2);
-    var y = Math.round(pozice.y + 4);
-    if (y + vyska > VYSKA) {
-      y = Math.round(pozice.y - (postava.vyska || 130) - vyska - 2);
-    }
-    if (y < 0) {
-      y = 0;
-    }
+    /* jmenovka nesmí zalézt do pásu spodních lišt */
+    var y = FL1Logika.jmenovkaY(pozice.y, postava.vyska || 130, vyska, HRANA_PASU);
     if (x < 0) {
       x = 0;
     }
@@ -908,23 +894,10 @@
     return '—';
   }
 
-  function rozdelText(text, maxSirka) {
-    var slova = String(text).split(' ');
-    var radky = [];
-    var radek = '';
-    slova.forEach(function (slovo) {
-      var zkus = radek ? radek + ' ' + slovo : slovo;
-      if (radek && CTX.measureText(zkus).width > maxSirka) {
-        radky.push(radek);
-        radek = slovo;
-      } else {
-        radek = zkus;
-      }
-    });
-    if (radek) {
-      radky.push(radek);
-    }
-    return radky;
+  /* Šířka textu daným písmem pro rozvrh tabule. */
+  function sirkaTextu(text, velikost) {
+    CTX.font = velikost + 'px system-ui, sans-serif';
+    return CTX.measureText(text).width;
   }
 
   function kresliTabule() {
@@ -932,17 +905,21 @@
     if (!mista || !mista.tabule) {
       return;
     }
-    var ram = mista.tabule;
-    var sirka = isFinite(ram.w) ? ram.w : 120;
-    var x = isFinite(ram.x) ? ram.x : 60;
-    var y = isFinite(ram.y) ? ram.y : 235;
-    CTX.font = '11px system-ui, sans-serif';
-    var radky = rozdelText(textTabule(), sirka - 14);
+    var tabule = mista.tabule;
+    var ram = {
+      x: isFinite(tabule.x) ? tabule.x : 60,
+      y: isFinite(tabule.y) ? tabule.y : 235,
+      w: isFinite(tabule.w) ? tabule.w : 120,
+      h: isFinite(tabule.h) ? tabule.h : 60
+    };
+    /* odstup od rámu je už v souřadnicích mista.json */
+    var rozvrh = FL1Logika.rozvrhTabule(textTabule(), ram, sirkaTextu, 4);
     CTX.textAlign = 'center';
     CTX.textBaseline = 'middle';
     CTX.fillStyle = '#F3E9D2';
-    radky.forEach(function (radek, poradi) {
-      CTX.fillText(radek, x + sirka / 2, y + 22 + poradi * 15);
+    rozvrh.radky.forEach(function (radek) {
+      CTX.font = rozvrh.velikost + 'px system-ui, sans-serif';
+      CTX.fillText(radek.text, radek.x, radek.y);
     });
     CTX.textAlign = 'left';
     CTX.textBaseline = 'alphabetic';
@@ -1062,7 +1039,7 @@
 
   function aktualizujCile() {
     if (STAV.rezim === 'zaznam' && STAV.zapis) {
-      var mapa = stavyZeZaznamu(STAV.zapis.zobrazenyCas);
+      var mapa = stavyVCaseZaznamu(STAV.zapis.zobrazenyCas);
       STAV.postavy.forEach(function (postava) {
         var info = mapa[postava.klic];
         postava.stav = info && info.stav ? info.stav : 'nic';
@@ -1280,9 +1257,10 @@
     CTX.fillStyle = '#F3E9D2';
     var popis = '◆ ' + text;
     var maxSirka = SIRKA - 48;
-    while (popis.length > 3 && CTX.measureText(popis).width > maxSirka) {
-      popis = popis.slice(0, -2);
-    }
+    popis = FL1Logika.zkratText(popis, maxSirka, function (zkracovany) {
+      CTX.font = '16px system-ui, sans-serif';
+      return CTX.measureText(zkracovany).width;
+    });
     CTX.fillText(popis, 20, y + vyska / 2);
     CTX.textBaseline = 'alphabetic';
   }
@@ -1310,7 +1288,7 @@
     CTX.textAlign = 'left';
     CTX.fillText(hodinyMinuty(new Date(zapis.start)), x, y - 14);
     CTX.textAlign = 'center';
-    CTX.fillText('ZÁZNAM DNE · ' + hodinyMinuty(casZaznamu()), x + sirka / 2, y - 14);
+    CTX.fillText(hodinyMinuty(casZaznamu()), x + sirka / 2, y - 14);
     CTX.textAlign = 'right';
     CTX.fillText(hodinyMinuty(new Date(zapis.konec)), x + sirka, y - 14);
     CTX.textAlign = 'left';
@@ -1323,26 +1301,33 @@
   function kresliHlavicku() {
     var data = STAV.data;
     var razitko = data ? hodinyMinuty(parsujCas(data.vypocteno)) : '—';
+    /* štítky se kreslí ve viditelné části scény (na telefonu je scéna posunutá) */
+    var rozsah = FL1Logika.viditelnyRozsah(
+      SCENA ? SCENA.scrollLeft : 0,
+      SCENA ? SCENA.clientWidth : SIRKA,
+      PLATNO ? PLATNO.clientWidth : SIRKA,
+      SIRKA
+    );
+    var rezimText = STAV.rezim === 'zaznam' ? 'ZÁZNAM DNE' : 'ŽIVĚ';
     var text = 'aktualizováno ' + razitko;
     CTX.font = 'bold 19px system-ui, sans-serif';
-    var sirka = Math.ceil(CTX.measureText(text).width) + 24;
-    var x = SIRKA - sirka - 18;
-    var y = 18;
+    var rezimSirka = Math.ceil(CTX.measureText(rezimText).width) + 24;
+    var sirkaAkt = Math.ceil(CTX.measureText(text).width) + 24;
+    /* pozice obou štítků; na telefonu se pod sebe nepřekryjí */
+    var stitky = FL1Logika.rozvrhStitku(rozsah, rezimSirka, sirkaAkt);
+
     CTX.fillStyle = 'rgba(20,14,10,0.62)';
-    CTX.fillRect(x, y, sirka, 34);
+    CTX.fillRect(stitky.akt.x, stitky.akt.y, sirkaAkt, 34);
     CTX.fillStyle = '#F3E9D2';
     CTX.textBaseline = 'middle';
-    CTX.fillText(text, x + 12, y + 18);
+    CTX.fillText(text, stitky.akt.x + 12, stitky.akt.y + 18);
     CTX.textBaseline = 'alphabetic';
 
-    var rezimText = STAV.rezim === 'zaznam' ? 'ZÁZNAM DNE' : 'ŽIVĚ';
-    CTX.font = 'bold 19px system-ui, sans-serif';
-    var rezimSirka = Math.ceil(CTX.measureText(rezimText).width) + 24;
     CTX.fillStyle = 'rgba(20,14,10,0.62)';
-    CTX.fillRect(18, y, rezimSirka, 34);
+    CTX.fillRect(stitky.rezim.x, stitky.rezim.y, rezimSirka, 34);
     CTX.fillStyle = STAV.rezim === 'zaznam' ? '#d8a84a' : '#8fd18a';
     CTX.textBaseline = 'middle';
-    CTX.fillText(rezimText, 30, y + 18);
+    CTX.fillText(rezimText, stitky.rezim.x + 12, stitky.rezim.y + 18);
     CTX.textBaseline = 'alphabetic';
   }
 
@@ -1493,6 +1478,13 @@
     kresliTicker();
     kresliHlavicku();
     kresliKartu();
+    /* Po prvním vykreslení (jednou, ne při každém snímku) nastav posun scény. */
+    if (!STAV.posunNastaven) {
+      STAV.posunNastaven = true;
+      if (SCENA && PLATNO) {
+        SCENA.scrollLeft = FL1Logika.pocatecniPosun(PLATNO.clientWidth, SCENA.clientWidth);
+      }
+    }
   }
 
   function snimek(cas) {

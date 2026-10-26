@@ -197,10 +197,10 @@
   "stred_y": 680
  },
  "tabule": {
-  "x": 60,
-  "y": 235,
-  "w": 125,
-  "h": 120,
+  "x": 74,
+  "y": 272,
+  "w": 96,
+  "h": 54,
   "pozn": "černá tabule vlevo (stojí šikmo); obdélník pro text čísel"
  },
  "okno": {

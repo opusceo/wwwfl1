@@ -72,6 +72,11 @@ html, body {
 
 /* Telefon: plátno vyplní výšku okna pod lištou, do stran se posouvá prstem. */
 @media (max-width: 699px) {
+  /* na úzkou lištu se značka nevejde */
+  #znacka {
+    display: none;
+  }
+
   #scena {
     height: calc(100vh - 44px);
     height: calc(100dvh - 44px);

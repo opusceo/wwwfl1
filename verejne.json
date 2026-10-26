@@ -1,5 +1,5 @@
 {
- "vypocteno": "2026-10-26T15:42:30.319Z",
+ "vypocteno": "2026-10-26T17:28:00.877Z",
  "rezim": "zaznam",
  "postavy": [
   {
@@ -69,15 +69,15 @@
    "postava": "Maximus",
    "stav": "nic",
    "druh": "programování",
-   "od": "2026-10-26T14:39:39.450Z",
-   "cena_kc": 3.41
+   "od": "2026-10-26T17:17:28.666Z",
+   "cena_kc": 4.55
   },
   {
    "postava": "Sextus",
    "stav": "nic",
    "druh": "kontrola kódu",
-   "od": "2026-10-26T14:40:46.704Z",
-   "cena_kc": 1.23
+   "od": "2026-10-26T17:17:28.666Z",
+   "cena_kc": 2.1
   },
   {
    "postava": "Catulus",
@@ -88,99 +88,6 @@
   }
  ],
  "udalosti": [
-  {
-   "cas": "2026-10-25T15:45:57.301Z",
-   "postava": "Catulus",
-   "typ": "vraceno",
-   "druh": "kreslení"
-  },
-  {
-   "cas": "2026-10-25T17:07:41.590Z",
-   "postava": "Marcus",
-   "typ": "start",
-   "druh": "plánování"
-  },
-  {
-   "cas": "2026-10-25T17:07:57.934Z",
-   "postava": "Marcus",
-   "typ": "hotovo",
-   "druh": "plánování",
-   "cena_kc": 2.4
-  },
-  {
-   "cas": "2026-10-25T17:11:08.360Z",
-   "postava": "Marcus",
-   "typ": "start",
-   "druh": "plánování"
-  },
-  {
-   "cas": "2026-10-25T17:11:29.569Z",
-   "postava": "Marcus",
-   "typ": "rozdeleni",
-   "druh": "plánování"
-  },
-  {
-   "cas": "2026-10-25T17:11:29.569Z",
-   "postava": "Catulus",
-   "typ": "start",
-   "druh": "kreslení"
-  },
-  {
-   "cas": "2026-10-25T17:11:29.608Z",
-   "postava": "Marcus",
-   "typ": "rozdeleni",
-   "druh": "plánování"
-  },
-  {
-   "cas": "2026-10-25T17:11:29.608Z",
-   "postava": "Catulus",
-   "typ": "start",
-   "druh": "kreslení"
-  },
-  {
-   "cas": "2026-10-25T17:11:53.448Z",
-   "postava": "Marcus",
-   "typ": "hotovo",
-   "druh": "plánování",
-   "cena_kc": 2.95
-  },
-  {
-   "cas": "2026-10-25T17:14:20.173Z",
-   "postava": "Marcus",
-   "typ": "start",
-   "druh": "plánování"
-  },
-  {
-   "cas": "2026-10-25T17:14:30.712Z",
-   "postava": "Marcus",
-   "typ": "rozdeleni",
-   "druh": "plánování"
-  },
-  {
-   "cas": "2026-10-25T17:14:30.712Z",
-   "postava": "Catulus",
-   "typ": "start",
-   "druh": "kreslení"
-  },
-  {
-   "cas": "2026-10-25T17:14:30.724Z",
-   "postava": "Marcus",
-   "typ": "rozdeleni",
-   "druh": "plánování"
-  },
-  {
-   "cas": "2026-10-25T17:14:30.724Z",
-   "postava": "Catulus",
-   "typ": "start",
-   "druh": "kreslení"
-  },
-  {
-   "cas": "2026-10-25T17:14:41.457Z",
-   "postava": "Marcus",
-   "typ": "hotovo",
-   "druh": "plánování",
-   "cena_kc": 1.38
-  },
   {
    "cas": "2026-10-25T17:44:57.595Z",
    "postava": "Catulus",
@@ -1539,11 +1446,89 @@
    "postava": "Maximus",
    "typ": "nastroj",
    "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T16:33:27.843Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T16:35:15.039Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.38
+  },
+  {
+   "cas": "2026-10-26T16:35:15.039Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.17
+  },
+  {
+   "cas": "2026-10-26T16:38:06.734Z",
+   "postava": "Maximus",
+   "typ": "vraceno",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T16:38:25.632Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T16:40:01.983Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.34
+  },
+  {
+   "cas": "2026-10-26T16:40:01.983Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.34
+  },
+  {
+   "cas": "2026-10-26T17:15:05.741Z",
+   "postava": "Maximus",
+   "typ": "vraceno",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T17:15:25.808Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T17:17:28.666Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.42
+  },
+  {
+   "cas": "2026-10-26T17:17:28.666Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.36
+  },
+  {
+   "cas": "2026-10-26T17:23:48.224Z",
+   "postava": "Maximus",
+   "typ": "nastroj",
+   "druh": "programování"
   }
  ],
  "dnes": {
-  "cena_kc": 40.58,
-  "ukolu": 22
+  "cena_kc": 42.59,
+  "ukolu": 28
  },
  "ceka_na_ownera": 2,
  "kurz_usd_czk": {
