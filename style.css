@@ -1,0 +1,86 @@
+/* Živá kancelář FL1 – vzhled stránky. Scéna se kreslí do canvasu. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0d0a08;
+  color: #F3E9D2;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+#lista {
+  height: 44px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 14px;
+  background: #1c1410;
+  border-bottom: 1px solid #2B1D14;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#znacka {
+  color: #b9a888;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#prepinac {
+  background: #2B1D14;
+  color: #F3E9D2;
+  border: 1px solid #6b5237;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+#prepinac:hover {
+  background: #3a2718;
+}
+
+#prepinac:focus-visible {
+  outline: 2px solid #F3E9D2;
+  outline-offset: 2px;
+}
+
+#stav {
+  color: #8d7d64;
+  margin-left: auto;
+}
+
+#scena {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#platno {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  cursor: pointer;
+  touch-action: pan-x pan-y;
+}
+
+/* Telefon: plátno vyplní výšku okna pod lištou, do stran se posouvá prstem. */
+@media (max-width: 699px) {
+  #scena {
+    height: calc(100vh - 44px);
+    height: calc(100dvh - 44px);
+  }
+
+  #platno {
+    width: auto;
+    max-width: none;
+    height: calc(100vh - 44px);
+    height: calc(100dvh - 44px);
+  }
+}

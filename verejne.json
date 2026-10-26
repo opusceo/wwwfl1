@@ -1,0 +1,1583 @@
+{
+ "vypocteno": "2026-10-26T15:42:30.319Z",
+ "rezim": "zaznam",
+ "postavy": [
+  {
+   "postava": "Marcus",
+   "stav": "nic",
+   "druh": "plánování",
+   "od": "2026-10-26T00:24:08.755Z",
+   "cena_kc": 18.21
+  },
+  {
+   "postava": "Antoninus",
+   "stav": "nic",
+   "druh": "provádí postup",
+   "od": "2026-10-26T00:01:01.688Z",
+   "cena_kc": 7.99
+  },
+  {
+   "postava": "Diognétos",
+   "stav": "nic",
+   "druh": "hledání na webu",
+   "od": "2026-10-24T17:19:26.102Z",
+   "cena_kc": 0
+  },
+  {
+   "postava": "Rusticus",
+   "stav": "nic",
+   "druh": "čtení textů",
+   "od": "2026-10-23T19:19:33.625Z",
+   "cena_kc": 0
+  },
+  {
+   "postava": "Apollónios",
+   "stav": "nic",
+   "druh": "shrnutí a úvahy",
+   "od": "2026-10-25T19:01:53.151Z",
+   "cena_kc": 0
+  },
+  {
+   "postava": "Fronto",
+   "stav": "nic",
+   "druh": "psaní textů",
+   "od": "2026-10-25T19:27:25.029Z",
+   "cena_kc": 0
+  },
+  {
+   "postava": "Alexandros",
+   "stav": "nic",
+   "druh": "ověřování faktů",
+   "od": "2026-10-25T19:44:06.119Z",
+   "cena_kc": 0
+  },
+  {
+   "postava": "Galénos",
+   "stav": "nic",
+   "druh": "testy",
+   "od": null,
+   "cena_kc": 0
+  },
+  {
+   "postava": "Severus",
+   "stav": "nic",
+   "druh": "drobné úkoly",
+   "od": null,
+   "cena_kc": 0
+  },
+  {
+   "postava": "Maximus",
+   "stav": "nic",
+   "druh": "programování",
+   "od": "2026-10-26T14:39:39.450Z",
+   "cena_kc": 3.41
+  },
+  {
+   "postava": "Sextus",
+   "stav": "nic",
+   "druh": "kontrola kódu",
+   "od": "2026-10-26T14:40:46.704Z",
+   "cena_kc": 1.23
+  },
+  {
+   "postava": "Catulus",
+   "stav": "nic",
+   "druh": "kreslení",
+   "od": "2026-10-26T00:00:40.056Z",
+   "cena_kc": 9.75
+  }
+ ],
+ "udalosti": [
+  {
+   "cas": "2026-10-25T15:45:57.301Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T17:07:41.590Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T17:07:57.934Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.4
+  },
+  {
+   "cas": "2026-10-25T17:11:08.360Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T17:11:29.569Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T17:11:29.569Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T17:11:29.608Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T17:11:29.608Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T17:11:53.448Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.95
+  },
+  {
+   "cas": "2026-10-25T17:14:20.173Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T17:14:30.712Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T17:14:30.712Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T17:14:30.724Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T17:14:30.724Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T17:14:41.457Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 1.38
+  },
+  {
+   "cas": "2026-10-25T17:44:57.595Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T17:55:08.094Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:00:15.620Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:00:40.904Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.85
+  },
+  {
+   "cas": "2026-10-25T18:01:44.617Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:02:01.752Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:02:01.752Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:02:29.239Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.88
+  },
+  {
+   "cas": "2026-10-25T18:02:36.800Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:02:36.800Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:03:01.742Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.88
+  },
+  {
+   "cas": "2026-10-25T18:03:34.138Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 3.83
+  },
+  {
+   "cas": "2026-10-25T18:04:39.295Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:04:51.579Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:06:39.641Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:07:02.830Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.27
+  },
+  {
+   "cas": "2026-10-25T18:08:17.923Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:08:25.646Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:08:25.646Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:08:54.922Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.07
+  },
+  {
+   "cas": "2026-10-25T18:09:04.970Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 1.67
+  },
+  {
+   "cas": "2026-10-25T18:09:48.435Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:14:28.818Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:18:59.956Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:19:08.582Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:19:08.582Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:19:37.191Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.88
+  },
+  {
+   "cas": "2026-10-25T18:19:40.320Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.29
+  },
+  {
+   "cas": "2026-10-25T18:21:40.131Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:25:29.949Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:25:42.326Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.36
+  },
+  {
+   "cas": "2026-10-25T18:28:03.794Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:28:09.774Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:28:09.774Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:28:33.868Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.78
+  },
+  {
+   "cas": "2026-10-25T18:28:35.468Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 0.55
+  },
+  {
+   "cas": "2026-10-25T18:29:37.052Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:33:03.103Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:33:30.828Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.62
+  },
+  {
+   "cas": "2026-10-25T18:35:06.129Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:35:13.780Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 0.58
+  },
+  {
+   "cas": "2026-10-25T18:40:27.035Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:42:57.921Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 12.07
+  },
+  {
+   "cas": "2026-10-25T18:44:55.294Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T18:45:40.700Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 5.43
+  },
+  {
+   "cas": "2026-10-25T18:55:07.860Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T18:55:28.295Z",
+   "postava": "Fronto",
+   "typ": "start",
+   "druh": "psaní textů"
+  },
+  {
+   "cas": "2026-10-25T18:55:28.329Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:55:28.612Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:55:36.000Z",
+   "postava": "Fronto",
+   "typ": "hotovo",
+   "druh": "psaní textů",
+   "cena_kc": 0.03
+  },
+  {
+   "cas": "2026-10-25T18:55:56.860Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.18
+  },
+  {
+   "cas": "2026-10-25T18:55:57.647Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.17
+  },
+  {
+   "cas": "2026-10-25T18:56:02.577Z",
+   "postava": "Alexandros",
+   "typ": "start",
+   "druh": "ověřování faktů"
+  },
+  {
+   "cas": "2026-10-25T18:56:17.809Z",
+   "postava": "Alexandros",
+   "typ": "hotovo",
+   "druh": "ověřování faktů",
+   "cena_kc": 0.03
+  },
+  {
+   "cas": "2026-10-25T18:56:29.797Z",
+   "postava": "Fronto",
+   "typ": "start",
+   "druh": "psaní textů"
+  },
+  {
+   "cas": "2026-10-25T18:56:35.243Z",
+   "postava": "Fronto",
+   "typ": "hotovo",
+   "druh": "psaní textů",
+   "cena_kc": 0.04
+  },
+  {
+   "cas": "2026-10-25T18:56:40.179Z",
+   "postava": "Alexandros",
+   "typ": "start",
+   "druh": "ověřování faktů"
+  },
+  {
+   "cas": "2026-10-25T18:56:54.230Z",
+   "postava": "Alexandros",
+   "typ": "hotovo",
+   "druh": "ověřování faktů",
+   "cena_kc": 0.03
+  },
+  {
+   "cas": "2026-10-25T18:57:15.830Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 3.92
+  },
+  {
+   "cas": "2026-10-25T18:57:43.197Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T18:57:54.578Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:00:15.048Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T19:01:16.426Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T19:01:16.426Z",
+   "postava": "Apollónios",
+   "typ": "start",
+   "druh": "shrnutí a úvahy"
+  },
+  {
+   "cas": "2026-10-25T19:01:53.151Z",
+   "postava": "Apollónios",
+   "typ": "hotovo",
+   "druh": "shrnutí a úvahy",
+   "cena_kc": 0.08
+  },
+  {
+   "cas": "2026-10-25T19:02:16.406Z",
+   "postava": "Marcus",
+   "typ": "rozdeleni",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T19:02:16.406Z",
+   "postava": "Fronto",
+   "typ": "start",
+   "druh": "psaní textů"
+  },
+  {
+   "cas": "2026-10-25T19:02:28.165Z",
+   "postava": "Fronto",
+   "typ": "hotovo",
+   "druh": "psaní textů",
+   "cena_kc": 0.05
+  },
+  {
+   "cas": "2026-10-25T19:02:52.670Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 10.06
+  },
+  {
+   "cas": "2026-10-25T19:02:55.578Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:03:02.220Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:03:38.448Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.97
+  },
+  {
+   "cas": "2026-10-25T19:03:52.850Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.85
+  },
+  {
+   "cas": "2026-10-25T19:03:55.669Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:05:04.667Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:05:37.104Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.97
+  },
+  {
+   "cas": "2026-10-25T19:05:47.857Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.45
+  },
+  {
+   "cas": "2026-10-25T19:05:48.127Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:06:02.515Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 0.33
+  },
+  {
+   "cas": "2026-10-25T19:09:22.458Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:10:15.554Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:10:22.630Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:10:23.993Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:10:49.937Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.92
+  },
+  {
+   "cas": "2026-10-25T19:11:12.179Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.3
+  },
+  {
+   "cas": "2026-10-25T19:12:30.318Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T19:13:40.193Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 6.69
+  },
+  {
+   "cas": "2026-10-25T19:14:39.507Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T19:14:52.109Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 0.98
+  },
+  {
+   "cas": "2026-10-25T19:16:13.489Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:20:09.589Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:20:15.641Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:20:41.427Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.82
+  },
+  {
+   "cas": "2026-10-25T19:20:54.734Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.73
+  },
+  {
+   "cas": "2026-10-25T19:21:44.979Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:26:59.951Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:27:19.957Z",
+   "postava": "Fronto",
+   "typ": "start",
+   "druh": "psaní textů"
+  },
+  {
+   "cas": "2026-10-25T19:27:25.029Z",
+   "postava": "Fronto",
+   "typ": "hotovo",
+   "druh": "psaní textů",
+   "cena_kc": 0.02
+  },
+  {
+   "cas": "2026-10-25T19:27:38.535Z",
+   "postava": "Alexandros",
+   "typ": "start",
+   "druh": "ověřování faktů"
+  },
+  {
+   "cas": "2026-10-25T19:27:52.953Z",
+   "postava": "Alexandros",
+   "typ": "hotovo",
+   "druh": "ověřování faktů",
+   "cena_kc": 0.04
+  },
+  {
+   "cas": "2026-10-25T19:28:31.999Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 4.59
+  },
+  {
+   "cas": "2026-10-25T19:29:51.543Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:30:06.879Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:30:12.009Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:30:15.226Z",
+   "postava": "Alexandros",
+   "typ": "start",
+   "druh": "ověřování faktů"
+  },
+  {
+   "cas": "2026-10-25T19:30:22.873Z",
+   "postava": "Alexandros",
+   "typ": "hotovo",
+   "druh": "ověřování faktů",
+   "cena_kc": 0.01
+  },
+  {
+   "cas": "2026-10-25T19:30:40.570Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.82
+  },
+  {
+   "cas": "2026-10-25T19:30:46.192Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 2.45
+  },
+  {
+   "cas": "2026-10-25T19:30:53.211Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.25
+  },
+  {
+   "cas": "2026-10-25T19:30:53.551Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:31:04.084Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 0.36
+  },
+  {
+   "cas": "2026-10-25T19:33:49.961Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T19:41:17.030Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:41:51.246Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 4.52
+  },
+  {
+   "cas": "2026-10-25T19:42:57.222Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:43:34.288Z",
+   "postava": "Alexandros",
+   "typ": "start",
+   "druh": "ověřování faktů"
+  },
+  {
+   "cas": "2026-10-25T19:43:45.672Z",
+   "postava": "Alexandros",
+   "typ": "hotovo",
+   "druh": "ověřování faktů",
+   "cena_kc": 0.02
+  },
+  {
+   "cas": "2026-10-25T19:43:59.072Z",
+   "postava": "Alexandros",
+   "typ": "start",
+   "druh": "ověřování faktů"
+  },
+  {
+   "cas": "2026-10-25T19:44:06.119Z",
+   "postava": "Alexandros",
+   "typ": "hotovo",
+   "druh": "ověřování faktů",
+   "cena_kc": 0.02
+  },
+  {
+   "cas": "2026-10-25T19:44:49.899Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 5.33
+  },
+  {
+   "cas": "2026-10-25T19:47:15.398Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T19:47:16.954Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-25T19:47:40.200Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.48
+  },
+  {
+   "cas": "2026-10-25T19:48:44.182Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.18
+  },
+  {
+   "cas": "2026-10-25T19:48:44.182Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.1
+  },
+  {
+   "cas": "2026-10-25T19:50:35.093Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-25T19:51:49.518Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.15
+  },
+  {
+   "cas": "2026-10-25T19:51:49.518Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.1
+  },
+  {
+   "cas": "2026-10-25T19:56:54.402Z",
+   "postava": "Maximus",
+   "typ": "vraceno",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-25T20:00:08.392Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T20:01:20.686Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 4.28
+  },
+  {
+   "cas": "2026-10-25T20:47:28.217Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-25T20:47:28.219Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0
+  },
+  {
+   "cas": "2026-10-25T20:51:36.370Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-25T20:54:22.440Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.29
+  },
+  {
+   "cas": "2026-10-25T20:54:22.440Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.24
+  },
+  {
+   "cas": "2026-10-25T21:01:38.059Z",
+   "postava": "Maximus",
+   "typ": "nastroj",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-25T23:39:54.212Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T23:40:28.012Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 4.28
+  },
+  {
+   "cas": "2026-10-25T23:43:34.076Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T23:43:53.417Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.46
+  },
+  {
+   "cas": "2026-10-25T23:46:14.244Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T23:46:26.324Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 3.48
+  },
+  {
+   "cas": "2026-10-25T23:46:49.353Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-25T23:47:00.190Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 0.84
+  },
+  {
+   "cas": "2026-10-25T23:47:25.583Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T23:47:31.191Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:47:31.433Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:47:57.108Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.26
+  },
+  {
+   "cas": "2026-10-25T23:48:00.495Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.18
+  },
+  {
+   "cas": "2026-10-25T23:48:02.458Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:48:31.335Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.93
+  },
+  {
+   "cas": "2026-10-25T23:48:47.136Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.41
+  },
+  {
+   "cas": "2026-10-25T23:49:04.488Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:49:34.529Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:50:11.088Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T23:50:18.102Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:50:40.041Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.89
+  },
+  {
+   "cas": "2026-10-25T23:50:57.727Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.39
+  },
+  {
+   "cas": "2026-10-25T23:52:25.563Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T23:52:40.107Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:53:07.899Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.13
+  },
+  {
+   "cas": "2026-10-25T23:53:09.590Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 0.83
+  },
+  {
+   "cas": "2026-10-25T23:54:12.000Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:54:39.530Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T23:54:51.264Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:55:15.449Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.93
+  },
+  {
+   "cas": "2026-10-25T23:55:16.693Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 0.68
+  },
+  {
+   "cas": "2026-10-25T23:56:32.832Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-25T23:56:48.523Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:56:48.679Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:57:02.072Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:57:11.902Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.23
+  },
+  {
+   "cas": "2026-10-25T23:57:13.209Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 1.23
+  },
+  {
+   "cas": "2026-10-25T23:57:15.752Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 0.9
+  },
+  {
+   "cas": "2026-10-25T23:58:11.166Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-25T23:58:28.056Z",
+   "postava": "Catulus",
+   "typ": "vraceno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-26T00:00:10.666Z",
+   "postava": "Antoninus",
+   "typ": "start",
+   "druh": "provádí postup"
+  },
+  {
+   "cas": "2026-10-26T00:00:17.989Z",
+   "postava": "Catulus",
+   "typ": "start",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-26T00:00:40.056Z",
+   "postava": "Catulus",
+   "typ": "hotovo",
+   "druh": "kreslení",
+   "cena_kc": 0.96
+  },
+  {
+   "cas": "2026-10-26T00:01:01.688Z",
+   "postava": "Antoninus",
+   "typ": "hotovo",
+   "druh": "provádí postup",
+   "cena_kc": 1.33
+  },
+  {
+   "cas": "2026-10-26T00:01:19.937Z",
+   "postava": "Catulus",
+   "typ": "schvaleno",
+   "druh": "kreslení"
+  },
+  {
+   "cas": "2026-10-26T00:18:17.449Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-26T00:19:19.994Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 5.45
+  },
+  {
+   "cas": "2026-10-26T00:21:59.722Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-26T00:22:22.189Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.08
+  },
+  {
+   "cas": "2026-10-26T00:23:44.478Z",
+   "postava": "Marcus",
+   "typ": "start",
+   "druh": "plánování"
+  },
+  {
+   "cas": "2026-10-26T00:24:08.755Z",
+   "postava": "Marcus",
+   "typ": "hotovo",
+   "druh": "plánování",
+   "cena_kc": 2.06
+  },
+  {
+   "cas": "2026-10-26T00:24:44.472Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T00:26:44.915Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.29
+  },
+  {
+   "cas": "2026-10-26T00:26:44.915Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.01
+  },
+  {
+   "cas": "2026-10-26T00:37:57.577Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T00:39:55.145Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.31
+  },
+  {
+   "cas": "2026-10-26T00:39:55.145Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.01
+  },
+  {
+   "cas": "2026-10-26T04:15:47.021Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T04:18:54.834Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.49
+  },
+  {
+   "cas": "2026-10-26T04:18:54.834Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.1
+  },
+  {
+   "cas": "2026-10-26T04:22:12.959Z",
+   "postava": "Maximus",
+   "typ": "vraceno",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T14:04:20.146Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T14:08:36.755Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.73
+  },
+  {
+   "cas": "2026-10-26T14:08:36.756Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.19
+  },
+  {
+   "cas": "2026-10-26T14:21:56.662Z",
+   "postava": "Maximus",
+   "typ": "vraceno",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T14:22:54.426Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T14:27:49.844Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.85
+  },
+  {
+   "cas": "2026-10-26T14:27:49.844Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.21
+  },
+  {
+   "cas": "2026-10-26T14:34:46.148Z",
+   "postava": "Maximus",
+   "typ": "vraceno",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T14:34:51.050Z",
+   "postava": "Maximus",
+   "typ": "start",
+   "druh": "programování"
+  },
+  {
+   "cas": "2026-10-26T14:39:39.450Z",
+   "postava": "Maximus",
+   "typ": "hotovo",
+   "druh": "programování",
+   "cena_kc": 0.73
+  },
+  {
+   "cas": "2026-10-26T14:39:39.450Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.34
+  },
+  {
+   "cas": "2026-10-26T14:40:46.704Z",
+   "postava": "Sextus",
+   "typ": "hotovo",
+   "druh": "kontrola kódu",
+   "cena_kc": 0.35
+  },
+  {
+   "cas": "2026-10-26T14:47:45.252Z",
+   "postava": "Maximus",
+   "typ": "nastroj",
+   "druh": "programování"
+  }
+ ],
+ "dnes": {
+  "cena_kc": 40.58,
+  "ukolu": 22
+ },
+ "ceka_na_ownera": 2,
+ "kurz_usd_czk": {
+  "kurz": 21.741
+ },
+ "cisla": {
+  "vypocteno": "2026-10-26T00:00:07.363Z",
+  "cela_doba": {
+   "vypocteno": "2026-10-26T00:00:07.363Z",
+   "od": "2026-10-23",
+   "do": "2026-10-26",
+   "zakazky": 54,
+   "cena_usd": 17.7512,
+   "reditel_podil": 0.696,
+   "zakazka_min_usd": 0.0017,
+   "zakazka_max_usd": 2.7567,
+   "zakazka_prumer_usd": 0.3287,
+   "sluzby_behu": 4,
+   "sluzby_cena_usd": 0.001,
+   "vynechano_testovacich": 16
+  },
+  "posledni_tyden": {
+   "vypocteno": "2026-10-26T00:00:07.363Z",
+   "od": "2026-10-20",
+   "do": "2026-10-26",
+   "zakazky": 54,
+   "cena_usd": 17.7512,
+   "reditel_podil": 0.696,
+   "zakazka_min_usd": 0.0017,
+   "zakazka_max_usd": 2.7567,
+   "zakazka_prumer_usd": 0.3287,
+   "sluzby_behu": 4,
+   "sluzby_cena_usd": 0.001,
+   "vynechano_testovacich": 16
+  }
+ }
+}

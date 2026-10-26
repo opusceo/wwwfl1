@@ -1,0 +1,431 @@
+{
+ "popis": "Místa ve scéně živé kanceláře (pozadí 1536×864, noc 20261025-235307-8832 i den 20261025-235515-2e12 mají stejné rozvržení). Souřadnice v pixelech pozadí; stred = střed objektu, spodek = bod, kam postavit spodní okraj (střed) spritu. U pracovních stolů sedí postava zády k divákovi na stoličce (sprite <jmeno>-sedi-zady obsahuje stoličku, spodek = paty nohou stoličky).",
+ "rozmer": {
+  "sirka": 1536,
+  "vyska": 864
+ },
+ "pozadi": {
+  "noc": "ziva-kancelar-20261025-235307-8832.png",
+  "den": "ziva-kancelar-20261025-235515-2e12.png"
+ },
+ "plameny": [
+  { "id": 1, "x": 303, "y": 52, "druh": "závěsná lampa vlevo" },
+  { "id": 2, "x": 483, "y": 72, "druh": "stojací lampa u Marcusova stolu" },
+  { "id": 3, "x": 22, "y": 228, "druh": "pochodeň u tabule vlevo" },
+  { "id": 4, "x": 1240, "y": 72, "druh": "závěsná lampa vpravo" },
+  { "id": 5, "x": 1351, "y": 477, "druh": "nástěnná lampa u dveří" }
+ ],
+ "obrazovky": [
+  { "id": "stul-1", "x": 342, "y": 452, "w": 86, "h": 62 },
+  { "id": "stul-2", "x": 583, "y": 485, "w": 88, "h": 64 },
+  { "id": "stul-3", "x": 843, "y": 495, "w": 86, "h": 62 },
+  { "id": "stul-4", "x": 1055, "y": 445, "w": 86, "h": 62 },
+  { "id": "stul-5", "x": 640, "y": 640, "w": 88, "h": 64 },
+  { "id": "stul-6", "x": 845, "y": 688, "w": 88, "h": 64 },
+  { "id": "stul-7", "x": 1075, "y": 632, "w": 86, "h": 62 },
+  { "id": "antoninus", "x": 715, "y": 325, "w": 90, "h": 66 },
+  { "id": "dilna-1", "x": 750, "y": 105, "w": 40, "h": 32 },
+  { "id": "dilna-2", "x": 945, "y": 175, "w": 64, "h": 48 }
+ ],
+ "stoly": [
+  {
+   "id": 1,
+   "stred_x": 335,
+   "stred_y": 500,
+   "stolicka_x": 380,
+   "stolicka_y": 562,
+   "spodek_x": 380,
+   "spodek_y": 597,
+   "obrazovka_x": 342,
+   "obrazovka_y": 452
+  },
+  {
+   "id": 2,
+   "stred_x": 585,
+   "stred_y": 525,
+   "stolicka_x": 538,
+   "stolicka_y": 605,
+   "spodek_x": 538,
+   "spodek_y": 637,
+   "obrazovka_x": 583,
+   "obrazovka_y": 485
+  },
+  {
+   "id": 3,
+   "stred_x": 840,
+   "stred_y": 540,
+   "stolicka_x": 883,
+   "stolicka_y": 610,
+   "spodek_x": 883,
+   "spodek_y": 641,
+   "obrazovka_x": 843,
+   "obrazovka_y": 495
+  },
+  {
+   "id": 4,
+   "stred_x": 1055,
+   "stred_y": 500,
+   "stolicka_x": 1097,
+   "stolicka_y": 560,
+   "spodek_x": 1097,
+   "spodek_y": 591,
+   "obrazovka_x": 1055,
+   "obrazovka_y": 445
+  },
+  {
+   "id": 5,
+   "stred_x": 633,
+   "stred_y": 690,
+   "stolicka_x": 673,
+   "stolicka_y": 762,
+   "spodek_x": 673,
+   "spodek_y": 797,
+   "obrazovka_x": 640,
+   "obrazovka_y": 640
+  },
+  {
+   "id": 6,
+   "stred_x": 840,
+   "stred_y": 735,
+   "stolicka_x": 882,
+   "stolicka_y": 815,
+   "spodek_x": 882,
+   "spodek_y": 849,
+   "obrazovka_x": 845,
+   "obrazovka_y": 688
+  },
+  {
+   "id": 7,
+   "stred_x": 1070,
+   "stred_y": 690,
+   "stolicka_x": 1108,
+   "stolicka_y": 760,
+   "spodek_x": 1108,
+   "spodek_y": 794,
+   "obrazovka_x": 1075,
+   "obrazovka_y": 632
+  }
+ ],
+ "antoninus": {
+  "stred_x": 735,
+  "stred_y": 395,
+  "spodek_x": 900,
+  "spodek_y": 440,
+  "obrazovka_x": 715,
+  "obrazovka_y": 325,
+  "pozn": "stojí vedle svého stolu na šedomodrém koberci (vpravo od stolu)"
+ },
+ "marcus": {
+  "stred_x": 420,
+  "stred_y": 268,
+  "spodek_x": 610,
+  "spodek_y": 330,
+  "pozn": "stojí vedle svého stolu na purpurovém koberci (vpravo od stolu)"
+ },
+ "dilna": [
+  {
+   "id": 1,
+   "stred_x": 725,
+   "stred_y": 150,
+   "spodek_x": 790,
+   "spodek_y": 205,
+   "obrazovka_x": 750,
+   "obrazovka_y": 105,
+   "pozn": "za sklem – kreslit pod sklem nebo průhledně"
+  },
+  {
+   "id": 2,
+   "stred_x": 955,
+   "stred_y": 215,
+   "spodek_x": 990,
+   "spodek_y": 265,
+   "obrazovka_x": 945,
+   "obrazovka_y": 175,
+   "pozn": "za sklem – kreslit pod sklem nebo průhledně"
+  }
+ ],
+ "stojan": {
+  "stred_x": 1330,
+  "stred_y": 225,
+  "spodek_x": 1285,
+  "spodek_y": 365,
+  "pozn": "Catulus stojí před stojanem; stolička 1245,325"
+ },
+ "odpocivarna": [
+  {
+   "id": 1,
+   "spodek_x": 50,
+   "spodek_y": 700
+  },
+  {
+   "id": 2,
+   "spodek_x": 215,
+   "spodek_y": 700
+  },
+  {
+   "id": 3,
+   "spodek_x": 385,
+   "spodek_y": 700
+  },
+  {
+   "id": 4,
+   "spodek_x": 550,
+   "spodek_y": 700
+  },
+  {
+   "id": 5,
+   "spodek_x": 130,
+   "spodek_y": 746
+  },
+  {
+   "id": 6,
+   "spodek_x": 300,
+   "spodek_y": 746
+  },
+  {
+   "id": 7,
+   "spodek_x": 470,
+   "spodek_y": 746
+  }
+ ],
+ "schranka": {
+  "stred_x": 1356,
+  "stred_y": 622
+ },
+ "pokladnicka": {
+  "stred_x": 1278,
+  "stred_y": 680
+ },
+ "tabule": {
+  "x": 60,
+  "y": 235,
+  "w": 125,
+  "h": 120,
+  "pozn": "černá tabule vlevo (stojí šikmo); obdélník pro text čísel"
+ },
+ "okno": {
+  "x": 0,
+  "y": 0,
+  "w": 215,
+  "h": 210,
+  "pozn": "klenuté okno s nočním / denním Římem"
+ },
+ "meritko": {
+  "popis": "Výška stojící postavy ≈ 1,3 × výška pracovního stolu ve scéně (stůl 108 px → postava 140 px, v souřadnicích 1536×864). Sprity ve sprity-sc/ jsou už zmenšené (nejbližší pixel, paleta) – kreslit 1:1 v souřadnicích 1536×864; pozadí-sc je poloviční (768×432), kreslit 2× nejbližším pixelem.",
+  "vyska_stolu_px": 108,
+  "vyska_postavy_px": 140,
+  "listy": {
+   "vedeni_list1_a_list2": 0.4667,
+   "pracovnici_stoji_a_sedi_zady": 0.3544
+  },
+  "predmety_sirka_px": {
+   "cedulka": 110,
+   "konfety": 180,
+   "lampa-vyp": 60,
+   "lampa-zap": 60,
+   "mince": 32,
+   "obrazovka-vyp": 92,
+   "obrazovka-zap": 92,
+   "pokladnicka-0": 88,
+   "pokladnicka-1": 88,
+   "pokladnicka-2": 88,
+   "schranka-vyp": 80,
+   "schranka-zap": 80,
+   "svitek": 56
+  },
+  "sedi_zady_stolicka": "sprite <jmeno>-sedi-zady má vlastní stoličku ~31 px, ve scéně je stolička ~70 px: spodek spritu na spodek stoličky (stoly[].spodek), sprite stoličku scény zakryje.",
+  "pozadi_sc": {
+   "noc": "pozadi-sc/noc.png",
+   "den": "pozadi-sc/den.png",
+   "sirka": 768,
+   "vyska": 432,
+   "zvetseni": 2
+  }
+ },
+ "sprity_sc": {
+  "alexandros-sedi": {
+   "sirka": 139,
+   "vyska": 142
+  },
+  "alexandros-sedi-zady": {
+   "sirka": 62,
+   "vyska": 113
+  },
+  "alexandros-stoji": {
+   "sirka": 77,
+   "vyska": 140
+  },
+  "antoninus-sedi": {
+   "sirka": 94,
+   "vyska": 146
+  },
+  "antoninus-stoji": {
+   "sirka": 68,
+   "vyska": 139
+  },
+  "apollonios-sedi": {
+   "sirka": 136,
+   "vyska": 147
+  },
+  "apollonios-sedi-zady": {
+   "sirka": 62,
+   "vyska": 113
+  },
+  "apollonios-stoji": {
+   "sirka": 57,
+   "vyska": 140
+  },
+  "catulus-sedi": {
+   "sirka": 87,
+   "vyska": 145
+  },
+  "catulus-stoji": {
+   "sirka": 68,
+   "vyska": 136
+  },
+  "cedulka": {
+   "sirka": 110,
+   "vyska": 73
+  },
+  "diognetos-sedi": {
+   "sirka": 132,
+   "vyska": 141
+  },
+  "diognetos-sedi-zady": {
+   "sirka": 62,
+   "vyska": 111
+  },
+  "diognetos-stoji": {
+   "sirka": 59,
+   "vyska": 141
+  },
+  "fronto-sedi": {
+   "sirka": 132,
+   "vyska": 143
+  },
+  "fronto-sedi-zady": {
+   "sirka": 61,
+   "vyska": 112
+  },
+  "fronto-stoji": {
+   "sirka": 78,
+   "vyska": 136
+  },
+  "galenos-sedi": {
+   "sirka": 137,
+   "vyska": 139
+  },
+  "galenos-sedi-zady": {
+   "sirka": 66,
+   "vyska": 112
+  },
+  "galenos-stoji": {
+   "sirka": 68,
+   "vyska": 137
+  },
+  "konfety": {
+   "sirka": 180,
+   "vyska": 67
+  },
+  "lampa-vyp": {
+   "sirka": 60,
+   "vyska": 33
+  },
+  "lampa-zap": {
+   "sirka": 60,
+   "vyska": 48
+  },
+  "marcus-sedi": {
+   "sirka": 91,
+   "vyska": 149
+  },
+  "marcus-stoji": {
+   "sirka": 69,
+   "vyska": 141
+  },
+  "maximus-sedi": {
+   "sirka": 91,
+   "vyska": 149
+  },
+  "maximus-sedi-zady": {
+   "sirka": 68,
+   "vyska": 114
+  },
+  "maximus-stoji": {
+   "sirka": 76,
+   "vyska": 140
+  },
+  "mince": {
+   "sirka": 32,
+   "vyska": 28
+  },
+  "obrazovka-vyp": {
+   "sirka": 92,
+   "vyska": 122
+  },
+  "obrazovka-zap": {
+   "sirka": 92,
+   "vyska": 122
+  },
+  "pokladnicka-0": {
+   "sirka": 88,
+   "vyska": 86
+  },
+  "pokladnicka-1": {
+   "sirka": 88,
+   "vyska": 87
+  },
+  "pokladnicka-2": {
+   "sirka": 88,
+   "vyska": 87
+  },
+  "rusticus-sedi": {
+   "sirka": 133,
+   "vyska": 140
+  },
+  "rusticus-sedi-zady": {
+   "sirka": 62,
+   "vyska": 111
+  },
+  "rusticus-stoji": {
+   "sirka": 76,
+   "vyska": 130
+  },
+  "schranka-vyp": {
+   "sirka": 80,
+   "vyska": 89
+  },
+  "schranka-zap": {
+   "sirka": 80,
+   "vyska": 89
+  },
+  "severus-sedi": {
+   "sirka": 143,
+   "vyska": 142
+  },
+  "severus-sedi-zady": {
+   "sirka": 65,
+   "vyska": 113
+  },
+  "severus-stoji": {
+   "sirka": 63,
+   "vyska": 145
+  },
+  "sextus-sedi": {
+   "sirka": 91,
+   "vyska": 147
+  },
+  "sextus-sedi-zady": {
+   "sirka": 65,
+   "vyska": 114
+  },
+  "sextus-stoji": {
+   "sirka": 69,
+   "vyska": 139
+  },
+  "svitek": {
+   "sirka": 56,
+   "vyska": 54
+  }
+ }
+}
